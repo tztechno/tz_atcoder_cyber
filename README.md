@@ -10,4 +10,6 @@ https://cyberscript77.github.io/wiki/#/
 
 https://github.com/5l1v3r1/cyber
 
+https://cyberscript.dev/play.html
+
 hiroyuk1
