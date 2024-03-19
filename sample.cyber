@@ -1,123 +1,32 @@
+###################################################
+###################################################
+###################################################
+###################################################
+###################################################
+###################################################
+###################################################
+###################################################
+###################################################
+###################################################
+###################################################
+###################################################
+###################################################
+###################################################
+###################################################
+###################################################
+###################################################
+###################################################
+###################################################
+###################################################
+###################################################
+import math
 
-Placing Marbles
--- string型をnumber型に変換。
-func ston(s):
-  l = s.len()
-  n = 0
-  for 0..l each i:
-    n = n * 10 + number(s[i])
-  return n
-t = getInput()
-c = 0
-if t[0] == '1':
-  c += 1
-if t[1] == '1':
-  c += 1
-if t[2] == '1':
-  c += 1
-print '{c}'
-文字列についてはPythonとほぼ同じです。
+func dist(x0 float, y0 float, x1 float, y1 float) float:
+    var dx = x0-x1
+    var dy = y0-y1
+    return math.sqrt(dx^2 + dy^2)
 
-Shift Only
--- string型をnumber型に変換。
-func ston(s):
-  l = s.len()
-  n = 0
-  for 0..l each i:
-    n = n * 10 + number(s[i])
-  return n
--- string型をnumber型のlistに変換。
-func stoln(s):
-  a = []
-  for s.split(' ') each i:
-    a.append ston(i)
-  return a
-n = ston(getInput())
-a = stoln(getInput())
-ans = 30
-for a each i:
-  c = 0
-  while i % 2 == 0:
-    c += 1
-    i /= 2
-  if c < ans:
-    ans = c
-print ans
-除算はPythonとは違い、/ (スラッシュ1つ)です。
-
-Coins
--- string型をnumber型に変換。
-func ston(s):
-  l = s.len()
-  n = 0
-  for 0..l each i:
-    n = n * 10 + number(s[i])
-  return n
-a = ston(getInput())
-b = ston(getInput())
-c = ston(getInput())
-x = ston(getInput())
-ans = 0
-for 0..a+1 each i:
-  for 0..b+1 each j:
-    for 0..c+1 each k:
-      if 500 * i + 100 * j + 50 * k == x:
-        ans += 1
-print ans
-Some Sums
--- string型をnumber型に変換。
-func ston(s):
-  l = s.len()
-  n = 0
-  for 0..l each i:
-    n = n * 10 + number(s[i])
-  return n
-t = getInput().split(' ')
-n = ston(t[0])
-a = ston(t[1])
-b = ston(t[2])
-c = 0
-for 1..n+1 each i:
-  j = i
-  s = 0
-  while j > 0:
-    s += j % 10
-    j /= 10
-    j = number(int(j))
-  if a <= s and s <= b:
-    c += i
-print c
-切り捨てがよく分からなかったので、j = number(int(j))としました。
-
-Card Game for Two
--- string型をnumber型に変換。
-func ston(s):
-  l = s.len()
-  n = 0
-  for 0..l each i:
-    n = n * 10 + number(s[i])
-  return n
--- string型をnumber型のlistに変換。
-func stoln(s):
-  a = []
-  for s.split(' ') each i:
-    a.append ston(i)
-  return a
-n = ston(getInput())
-a = stoln(getInput())
-a.sort((i, j) => i > j)
-x = 0
-for 0..n each i:
-  if i % 2 == 0:
-    x += a[i]
-  else:
-    x -= a[i]
-print x
-昇順ソート…a.sort((i, 
-
-
-
-
-
+print(dist(1,2,3,4))
+###################################################
 
 
