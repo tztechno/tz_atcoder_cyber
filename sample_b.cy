@@ -30,6 +30,7 @@ var res = fib(30)
 print("time: $((os.now() - start) * 1000)")
 print res
 ###################################################
+[error]
 import math
 
 var worlds = ['World', '世界', 'दुनिया']
