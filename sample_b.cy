@@ -38,6 +38,7 @@ worlds.append(math.random())
 for worlds -> w:
     print 'Hello, $(w)!'
 ###################################################
+[error]
 import math
 
 func dist(x0 float, y0 float, x1 float, y1 float) float:
