@@ -16,6 +16,8 @@ https://fubark.github.io/cyber/
 
 https://cyberscript.dev/play.html
 
+https://github.com/fubark/cyber
+
 hiroyuk1
 
 .cy
