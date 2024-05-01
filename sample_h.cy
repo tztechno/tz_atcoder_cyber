@@ -88,6 +88,13 @@ for 0..n each i:
 NLout(b)
 #################################################
 //abc306_a
+[error]
+----------------------------------------------
+panic: error.EndOfStream
+/judge/Main.cy:2:5 main:
+s = getInput()
+    ^
+----------------------------------------------
 n = int(getInput())
 s = getInput()
 l = s.len()
