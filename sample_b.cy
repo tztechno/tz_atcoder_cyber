@@ -31,6 +31,13 @@ print("time: $((os.now() - start) * 1000)")
 print res
 ###################################################
 [error]
+[it works on playground, but not work on atcoder]
+---------------------------------------------------
+ParseError: Expected `:` after local variable name.
+/judge/Main.cy:3:12:
+var worlds = ['World', '世界', 'दुनिया', 'mundo']
+           ^
+---------------------------------------------------
 import math
 
 var worlds = ['World', '世界', 'दुनिया']
