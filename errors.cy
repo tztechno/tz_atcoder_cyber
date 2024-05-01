@@ -13,6 +13,8 @@ WHAT WAS IMPOSSIBLE....... TO BE RESOLVED.........
 ##################################################
 ##################################################
 ##################################################
+import os 'os'
+os.stdin.streamLines() as line:
 ##################################################
 Thanks for providing readfq2. 
 It helped me narrow down the perf bottleneck quickly. 
