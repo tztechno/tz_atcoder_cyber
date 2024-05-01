@@ -14,6 +14,12 @@ WHAT WAS IMPOSSIBLE....... TO BE RESOLVED.........
 ##################################################
 ##################################################
 ##################################################
+Thanks for providing readfq2. 
+It helped me narrow down the perf bottleneck quickly. 
+readLine was meant for getting the user input from the command line 
+and not bulk reads from stdin. 
+For that reason, I deprecated readLine in favor of getInput. 
+As for bulk reads on std.in you can do the following now in readfq2:
 ##################################################
 [error] v0.2
 --------------------------------------------   
